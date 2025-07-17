@@ -100,3 +100,62 @@ img {
   width: 100%;
   border-radius: 8px;
 }
+
+/*  main section start now styles */
+  main > section{
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .teams-container{
+ justify-content: center;
+ align-items: center;
+  }
+
+
+.teams{
+ display: grid;
+ grid-template-columns: repeat(2, 1fr);
+ gap: 24px;
+ padding: 30px;
+ border-radius: 8px;
+  }
+
+.teams-content{
+padding: 30px;
+ margin-left: 76px;
+
+  }
+
+.teams-title{
+font-size: 2.8rem;
+font-weight: 700;
+margin-bottom: 20px;
+}
+
+.teams-description{
+font-weight: 500;
+margin-bottom: 20px;
+line-height: 26px;
+  }
+#Features{
+color: rgba(255, 144, 14, 1);
+}
+
+
+
+
+
+
+
+/* media styles */
+@media screen and (max-width:576px){
+    .navbar,
+    .teams-container {
+        flex-direction: column;
+    }
+ .teams{
+    grid-template-columns: repeat(1, 1fr);
+ }
+
+}
