@@ -93,8 +93,7 @@ body {
   margin-bottom: 20px;
 }
 
-.banner,
-img {
+.banner-images {
   width: 100%;
   border-radius: 8px;
 }
@@ -183,13 +182,7 @@ align-items: center;
   line-height: 26px;
 }
 
-.architects-img {
-  max-width: 710px;
-  height: 980px;
-    margin-left: 140px;
-}
-
-.architects-img, img{
+.architects-img{
   width: 100%;
 }
 
@@ -210,8 +203,79 @@ margin-top: -100px;
 /* some facts badge styles */
 
 .some-facts{
+margin-left: 12px;
+}
+
+.some-facts-description{
+  width: 542px;
+  height: 55px;
 
 }
+
+.some-facts-title{
+font-size: 2.3rem;
+font-weight: 600;
+}
+
+
+.wrapper-badge-container{
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 124px;
+margin-bottom: 20px;
+
+}
+
+.badge-content{
+border: 1px solid rgba(255, 144, 14, 1);
+justify-content: center;
+align-items: center;
+text-align: center;
+padding: 10px;
+width: 241px;
+height: 241px;
+border-radius: 8px;
+}
+
+.badge-number{
+font-size: 2.8rem;
+font-weight: 600;
+}
+
+.badge-description{
+font-size: 1rem;
+font-weight: 600;
+}
+
+
+
+
+
+  .sponsors-container{
+  text-align: center;
+  padding: 12px;
+  }
+  
+  .sponsers-title{
+margin-bottom: 12px;
+font-size: 2.8rem;
+font-weight: 700;
+  }
+  .sponsers-description{
+ font-weight: 400;
+ line-height: 26px;
+  }
+  
+.wrapper-container-sopnsors{
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 155px;
+margin: 20px 0;
+filter:grayscale(6);
+}
+
+
+
 
 
 
@@ -223,11 +287,36 @@ margin-top: -100px;
   .wrapper-architects  {
     flex-direction: column;
   }
-  .teams {
+  .teams,
+  .wrapper-badge-container {
     grid-template-columns: repeat(1, 1fr);
   }
+ .wrapper-badge-container{
+   margin-left: 60px;
+ }
 
   .btn-exprience{
     margin: 0;
+  }
+}
+
+
+
+
+
+
+/* media query for tablet */
+@media screen and (min-width: 576px) and (max-width:992px){
+.wrapper-badge-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-left: 150px;
+  }
+  .teams-content,
+  .teams{
+    margin: 0;
+    margin-right: 12px;
+    gap: 10px;
+    padding: 0;
   }
 }
