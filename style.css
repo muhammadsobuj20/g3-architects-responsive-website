@@ -11,7 +11,7 @@ body {
   font-style: normal;
 }
 
-/* shaerd styles */
+/* shared styles */
 .display-flex {
   display: flex;
 }
@@ -70,8 +70,6 @@ body {
   max-width: 860px;
   text-align: center;
   margin: 20px auto;
-
-  
 }
 
 .banner-title {
@@ -102,60 +100,134 @@ img {
 }
 
 /*  main section start now styles */
-  main > section{
-    max-width: 1440px;
-    margin: 0 auto;
-  }
+main > section {
+  max-width: 1440px;
+  margin: 0 auto;
+  margin-top: 70px;
+}
 
-  .teams-container{
- justify-content: center;
- align-items: center;
-  }
+.teams-container {
+  justify-content: center;
+  align-items: center;
+}
+
+.teams {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.teams-content {
+  padding: 30px;
+  margin-left: 76px;
+}
+
+.teams-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.teams-description {
+  font-weight: 500;
+  margin-bottom: 20px;
+  line-height: 26px;
+}
+#Features {
+  color: rgba(255, 144, 14, 1);
+}
+
+/* Features you will love & enjoy section styles */
+.features-section {
+  margin-left: 20px;
+
+}
+
+.features-title {
+  border-left: 5px solid rgba(255, 144, 14, 1);
+  font-size: 2.8rem;
+  font-weight: 700;
+    padding: 12px;
+}
+
+.features-description {
+  line-height: 26px;
+}
+
+.wrapper-architects {
+justify-content: center;
+align-items: center;
+}
 
 
-.teams{
- display: grid;
- grid-template-columns: repeat(2, 1fr);
- gap: 24px;
- padding: 30px;
- border-radius: 8px;
-  }
+.architects-content {
+  margin-top: 20px;
+  padding: 30px;
+  max-width: 585px;
+  height: 175px;
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(211, 211, 211, 0.158);
+  box-shadow: 0px 0px 11px 11px rgba(0, 0, 0, 0.06);
 
-.teams-content{
-padding: 30px;
- margin-left: 76px;
+  border-radius: 8px;
+}
 
-  }
+.archtects-title {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
 
-.teams-title{
-font-size: 2.8rem;
+.banner-description {
+  line-height: 26px;
+}
+
+.architects-img {
+  max-width: 710px;
+  height: 980px;
+    margin-left: 140px;
+}
+
+.architects-img, img{
+  width: 100%;
+}
+
+.btn-exprience {
+padding: 40px 46px;
+font-size: 3rem;
 font-weight: 700;
-margin-bottom: 20px;
+margin-left: -100px;
+margin-top: -100px;
 }
 
-.teams-description{
-font-weight: 500;
-margin-bottom: 20px;
-line-height: 26px;
-  }
-#Features{
-color: rgba(255, 144, 14, 1);
+.experience {
+  color: #fff;
+  font-size: 1rem;
 }
 
 
+/* some facts badge styles */
 
+.some-facts{
+
+}
 
 
 
 
 /* media styles */
-@media screen and (max-width:576px){
-    .navbar,
-    .teams-container {
-        flex-direction: column;
-    }
- .teams{
+@media screen and (max-width: 576px) {
+  .navbar,
+  .teams-container,
+  .wrapper-architects  {
+    flex-direction: column;
+  }
+  .teams {
     grid-template-columns: repeat(1, 1fr);
- }
+  }
 
+  .btn-exprience{
+    margin: 0;
+  }
 }
