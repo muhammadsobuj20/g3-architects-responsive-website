@@ -249,8 +249,7 @@ font-weight: 600;
 
 
 
-
-
+/* sponsers section styles */
   .sponsors-container{
   text-align: center;
   padding: 12px;
@@ -274,6 +273,17 @@ margin: 20px 0;
 filter:grayscale(6);
 }
 
+/* footer styles */
+.footer-section{
+  max-width: 1440px;
+  margin: 0 auto;
+text-align: center;
+font-size: 1rem;
+font-weight: 400;
+padding: 30px;
+border-radius: 8px;
+margin-top: 70px;
+}
 
 
 
@@ -288,10 +298,12 @@ filter:grayscale(6);
     flex-direction: column;
   }
   .teams,
-  .wrapper-badge-container {
-    grid-template-columns: repeat(1, 1fr);
+  .wrapper-badge-container,
+  .wrapper-container-sopnsors {
+  grid-template-columns: repeat(1, 1fr);
   }
- .wrapper-badge-container{
+ .wrapper-badge-container,
+ .wrapper-container-sopnsors{
    margin-left: 60px;
  }
 
